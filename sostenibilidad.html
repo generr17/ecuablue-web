@@ -1,241 +1,200 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresa BIC</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --blue-bg: #113677;
-            --white-text: #ffffff;
-            --light-text: #d3d3d3;
-            --main-font: 'Montserrat', sans-serif;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresa BIC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
 
-        body {
-            font-family: var(--main-font);
-            margin: 0;
-            padding: 0;
-            background-color: var(--white-text);
-            box-sizing: border-box;
-            line-height: 1.6;
-        }
+    .contenedor {
+      position: relative;
+      width: 100%;
+      margin: auto;
+    }
 
-        .header-section {
-            width: 100%;
-            background-color: var(--white-text);
-            padding: 2rem 1rem;
-            text-align: center;
-        }
+    .imagen {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
 
-        .header-text {
-            color: var(--blue-bg);
-            font-size: 1.25rem;
-            font-weight: 700;
-            line-height: 1.4;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .card-wrapper {
-            position: relative;
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            padding: 0 1rem;
-            margin-top: 2rem;
-        }
+    .capa-texto {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%; /* 🔹 solo ocupa el 75% */
+      height: 100%;
+      color: #fff;
+      box-sizing: border-box;
+    }
 
-        .text-card {
-            background-color: var(--blue-bg);
-            border-radius: 10px;
-            color: var(--white-text);
-            padding: 2rem;
-            width: 100%;
-            z-index: 1;
-        }
+    .titulo {
+      text-align: center;
+      color:blue ;
+      font-weight: 400;
+      width: 70%;
+      
+    }
 
-        .text-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-        }
+    .titulo strong {
+      font-weight: 700;
+    }
 
-        .column {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px 40px;
+      width: 60%;
+    }
 
-        .item {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-        }
+    .item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
 
-        .item .number {
-            font-size: 3rem;
-            font-weight: 700;
-            line-height: 1;
-            white-space: nowrap;
-        }
+    .numero {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1;
+    }
 
-        .item .text-content h3 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin: 0;
-        }
+    .texto p {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
 
-        .item .text-content p {
-            font-size: 0.9rem;
-            font-weight: 400;
-            color: var(--light-text);
-            margin: 0.5rem 0 0;
-            line-height: 1.4;
-        }
+    .texto strong {
+      font-weight: 700;
+    }
 
-        .image-container {
-            position: relative;
-            width: 100%;
-            margin-top: -80px;
-            z-index: 2;
-        }
-
-        .image-container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('https://i.imgur.com/Bf1o1uV.jpg'); /* Imagen del invernadero */
-            background-size: cover;
-            background-position: center;
-            opacity: 0.2;
-            z-index: 1;
-        }
-
-        .image-container img {
-            position: relative;
-            width: 100%;
-            height: auto;
-            display: block;
-            z-index: 2;
-        }
-        
-        @media (min-width: 768px) {
-            .header-text {
-                font-size: 1.5rem;
-            }
-
-            .card-wrapper {
-                flex-direction: row;
-                align-items: flex-start;
-                margin-top: 5rem;
-            }
-
-            .text-card {
-                flex: 1.5;
-                padding: 3rem;
-                border-radius: 10px 0 0 10px;
-            }
-
-            .text-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 3rem;
-            }
-
-            .image-container {
-                flex: 1;
-                margin-top: -6rem; /* Superposición hacia arriba */
-                margin-left: -5rem; /* Superposición hacia la izquierda */
-                z-index: 2;
-                border-radius: 10px;
-                overflow: hidden;
-            }
-        }
-        
-        @media (min-width: 1024px) {
-            .header-text {
-                font-size: 2rem;
-            }
-            
-            .text-card {
-                padding: 4rem;
-                flex: 2;
-            }
-            
-            .image-container {
-                flex: 1;
-                margin-top: -8rem;
-                margin-left: -7rem;
-            }
-        }
-    </style>
+    /* Responsive */
+    @media (max-width: 768px) {
+      .capa-texto {
+        width: 100%;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
+<div class="contenedor">
+  <img src="assets/img/Fondo Azul con Señora.png" alt="Imagen de fondo" class="imagen">
 
-<div class="header-section">
-    <div class="header-text">
-        Como empresa de **Beneficio e Interés Colectivo (BIC)**, trabajamos con altos<br>
-        estándares de desempeño social y ambiental, en cinco pilares:
-    </div>
-</div>
+  <div class="capa-texto">
+    <h2 class="titulo">
+      Como empresa de <strong>Beneficio e Interés Colectivo (BIC)</strong>, trabajamos con altos estándares
+      de desempeño social y ambiental, en cinco pilares:
+    </h2>
 
-<div class="card-wrapper">
-    <div class="text-card">
-        <div class="text-grid">
-            <div class="column">
-                <div class="item">
-                    <span class="number">1.</span>
-                    <div class="text-content">
-                        <h3>Gobernanza y transparencia:</h3>
-                        <p>Prácticas éticas y administración responsable.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <span class="number">2.</span>
-                    <div class="text-content">
-                        <h3>Trabajadores:</h3>
-                        <p>Promovemos empleo digno y la estabilidad.</p>
-                        <p>El 80% de nuestro equipo son mujeres, muchas de ellas madres solteras, embarazadas o mayores de 45 años.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="item">
-                    <span class="number">3.</span>
-                    <div class="text-content">
-                        <h3>Clientes:</h3>
-                        <p>Apoyamos su crecimiento con asesoría técnica y el modelo Agrocoworking.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <span class="number">4.</span>
-                    <div class="text-content">
-                        <h3>Comunidad:</h3>
-                        <p>Modelo Fair Trade que asegura la compra de fruta a pequeños y medianos productores.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <span class="number">5.</span>
-                    <div class="text-content">
-                        <h3>Planeta:</h3>
-                        <p>Innovamos con empaques de bajo impacto ambiental, bajo un enfoque de reducir, reusar, reciclar y reinventar.</p>
-                    </div>
-                </div>
-            </div>
+    <div class="grid">
+      <div class="item">
+        <span class="numero">1.</span>
+        <div class="texto">
+          <p><strong>Gobernanza y transparencia:</strong><br>
+          Prácticas éticas y administración responsable.</p>
         </div>
-    </div>
-    <div class="image-container">
-        <img src="assets/img/sostenibilidad (1).png" alt="Mujer sosteniendo un recipiente con arándanos">
-    </div>
-</div>
+      </div>
 
+      <div class="item">
+        <span class="numero">2.</span>
+        <div class="texto">
+          <p><strong>Trabajadores:</strong><br>
+          Promovemos empleo digno y la estabilidad.  
+          El 80% de nuestro equipo son mujeres, muchas de ellas madres solteras, embarazadas o mayores de 45 años.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <span class="numero">3.</span>
+        <div class="texto">
+          <p><strong>Clientes:</strong><br>
+          Apoyamos su crecimiento con asesoría técnica y el modelo Agrocoworking.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <span class="numero">4.</span>
+        <div class="texto">
+          <p><strong>Comunidad:</strong><br>
+          Modelo Fair Trade que asegura la compra de fruta a pequeños y medianos productores.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <span class="numero">5.</span>
+        <div class="texto">
+          <p><strong>Planeta:</strong><br>
+          Innovamos con empaques de bajo impacto ambiental, bajo un enfoque de reducir, reusar, reciclar y reinventar.</p>
+        </div>
+      </div>
+    </div>
+     <div class="contenedor">
+        <img src="assets/img/Fondo Azul con Señora.png" alt="Imagen de fondo" class="imagen">
+
+        <div class="capa-texto">
+          <div class="contenido">
+            <h2 class="titulo">Título Principal</h2>
+            <p class="descripcion">
+              Este es el texto descriptivo que aparece sobre la imagen, siempre
+              ocupando el 75% de su ancho. El lado derecho queda libre.
+            </p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
 </body>
 </html>
+<!--
+
+.contenedor {
+  position: relative;
+  width: 100%; 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.imagen {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.capa-texto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65%; /* 🔹 ocupa 75% de la imagen */
+  height: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center; /* centra verticalmente */
+}
+
+.contenido {
+  padding: 40px;
+}
+
+.titulo {
+  font-size: 2rem;
+  margin-bottom: 0;
+  padding-top: 0;
+  font-weight: bold;
+}
+
+.descripcion {
+  font-size: 1rem;
+  line-height: 1.5;
+}-->

@@ -249,6 +249,17 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Navmenu - Desktop */
+.btn-sell{
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-size: 15px;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-weight: 500;
+  order: 2;
+  padding: 15px;
+  margin: 0 0 0 20px;
+}
 @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
@@ -314,12 +325,41 @@ h6 {
     z-index: 99;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
   }
-
+  .navmenu .dropdown i{
+    color: var(--blue);
+  }
+ 
+  .drop1 ul {
+    margin: 0;
+    padding: 10px 0;
+    background: var(--nav-dropdown-background-color);
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    left: 14px;
+    top: 130%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 4px;
+    z-index: 99;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  }
   .navmenu .dropdown ul li {
     min-width: 200px;
   }
+  .drop1 ul li {
+    min-width: 100px;
+    padding: 10px ;
+
+  }
 
   .navmenu .dropdown ul a{
+    padding: 10px 20px;
+    font-size: 15px;
+    text-transform: none;
+    color: var(--nav-dropdown-color);
+  }
+  .drop1 ul a{
     padding: 10px 20px;
     font-size: 15px;
     text-transform: none;
@@ -329,6 +369,9 @@ h6 {
   .navmenu .dropdown ul a i{
     font-size: 12px;
   }
+  .drop1 ul a i{
+    font-size: 12px;
+  }
 
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
@@ -336,7 +379,19 @@ h6 {
     color: var(--nav-dropdown-hover-color);
   }
 
+  .drop1 ul a:hover,
+  .drop1 ul .active:hover,
+  .drop1 ul li:hover>a{
+    color: var(--nav-dropdown-hover-color);
+  }
+  
+
   .navmenu .dropdown:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+  .drop1:hover>ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -348,7 +403,21 @@ h6 {
     visibility: hidden;
   }
 
+ .drop1 .dropdown ul{
+    top: 0;
+    left: -90%;
+    visibility: hidden;
+  }
+  
+
   .navmenu .dropdown .dropdown:hover>ul{
+    opacity: 1;
+    top: 0;
+    left: -100%;
+    visibility: visible;
+  }
+
+  .drop1 .dropdown:hover>ul{
     opacity: 1;
     top: 0;
     left: -100%;
@@ -366,6 +435,8 @@ h6 {
     cursor: pointer;
     transition: color 0.3s;
   }
+  
+  
 
   .navmenu {
     padding: 0;
@@ -386,7 +457,7 @@ h6 {
     z-index: 9998;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
   }
-
+  
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-dropdown-color);
@@ -400,7 +471,7 @@ h6 {
     white-space: nowrap;
     transition: 0.3s;
   }
-
+    
   .navmenu a i,
   .navmenu a:focus i {
     font-size: 12px;
@@ -427,6 +498,11 @@ h6 {
   .navmenu .active:focus {
     color: var(--nav-dropdown-hover-color);
   }
+  .drop1 li a:hover,
+  .drop1    .active,
+  .drop1   .active:focus {
+    color: var(--nav-dropdown-hover-color);
+  }
 
   .navmenu .active i,
   .navmenu .active:focus i {
@@ -434,7 +510,12 @@ h6 {
     color: var(--contrast-color);
     transform: rotate(180deg);
   }
-
+ 
+  .drop1 .btn-sell:hover,
+  .drop1 .btn-sell .active:hover,
+  .drop1 .btn-sell:hover>span{
+    color: var(--contrast-color);
+  }
   .navmenu .dropdown ul {
     position: static;
     display: none;
@@ -461,6 +542,10 @@ h6 {
     background-color: rgba(33, 37, 41, 0.1);
   }
 
+  .drop1 ul ul{
+    background-color: rgba(33, 37, 41, 0.1);
+  }
+
   .navmenu .dropdown>.dropdown-active{
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
@@ -469,6 +554,7 @@ h6 {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
+  
   .mobile-nav-active {
     overflow: hidden;
   }
@@ -1591,76 +1677,18 @@ section,
 /*--------------------------------------------------------------
   # Impacto azul
 ---------------------------------------------------------------*/
-.contenedor {
-  position: relative;
-  display: flex;
-  align-items: flex-end; /* alineamos contenido al fondo para que la imagen sobresalga */
-  justify-content: space-between;
-  width: 100%;
-  min-height: 600px;
-  background-image: url('../img/invernadero.jpg'); /* fondo con overlay si quieres */
-  background-size: cover;
-  background-position: center;
-  overflow: visible; /* permitimos que la imagen sobresalga */
-   transform: translate(0, 20%);
-}
-
-.contenedor::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--blue-dg3); /* overlay azul */
-  z-index: 1;
+  .sustainability  .container-fluid{
   
-}
-
-.contenido {
-  position: relative;
-  z-index: 2;
-  padding: 20px;
-  max-width: 100%;
-  color: white;
-  padding: 20px;
-}
-.contenido p, h1{
-  color: var(--contrast-color);
-}
-
-.imagen {
-  position: relative;
-  z-index: 2;
-  max-width: 50%;
-}
-
-.imagen img {
-  width: auto;
-  height: auto;
-  object-fit: cover;
-  transform: translate(115%, -84.5%); /* sobresale a la derecha y hacia arriba */
-}
+   padding: 0%;
+  
+ }
+ .sustainability img{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+ }
 
 
-@media (max-width: 768px) {
-  .contenedor {
-    flex-direction: column;
-    align-items: center;
-    min-height: 400px;
-  }
-
-  .contenido, .imagen {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .imagen img {
-    transform: translate(0, -10%);
-    width: 80%; /* ajusta tamaño en móvil */
-    margin: 0 auto;
-  }
-}
 
 /*--------------------------------------------------------------
 # clients Section
@@ -2101,6 +2129,7 @@ section,
   overflow: hidden;
 }
 
+
 .team .team-member .member-img:after {
   position: absolute;
   content: "";
@@ -2108,7 +2137,7 @@ section,
   right: -1px;
   bottom: -1px;
   height: 100%;
-  background-color: var(--surface-color);
+  background-color: var(--background-color);
   -webkit-mask: url("../img/team-shape.svg") no-repeat center bottom;
   mask: url("../img/team-shape.svg") no-repeat center bottom;
   -webkit-mask-size: contain;

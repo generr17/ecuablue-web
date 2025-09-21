@@ -117,11 +117,22 @@
   /**
    * Frequently Asked Questions Toggle
    */
-  document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle, .faq-item .faq-header').forEach((faqItem) => {
-    faqItem.addEventListener('click', () => {
-      faqItem.parentNode.classList.toggle('faq-active');
-    });
+
+  document.addEventListener('click', (e) => {
+      const trigger = e.target.closest('.faq-item h3, .faq-item .faq-toggle, .faq-item .faq-header');
+      if (!trigger) return; // No es un clic sobre un FAQ
+
+      const faqItem = trigger.closest('.faq-item'); // Contenedor del FAQ clickeado
+
+      // Cerrar todos los FAQ abiertos excepto el clickeado
+      document.querySelectorAll('.faq-item.faq-active').forEach(item => {
+        if (item !== faqItem) item.classList.remove('faq-active');
+      });
+
+      // Alternar el FAQ clickeado
+      faqItem.classList.toggle('faq-active');
   });
+
 
   /**
    * Init isotope layout and filters
