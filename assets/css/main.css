@@ -100,21 +100,27 @@ h6 {
 }
 .dg-1{
   background: var(--blue-dg1);
+  color: var(--contrast-color);
 }
 .dg-2{
   background: var(--blue-dg2);
+  color: var(--contrast-color);
 }
 .dg-3{
   background: var(--blue-dg3);
+  color: var(--contrast-color);
 }
 .dg-4{
   background: var(--blue-dg4);
+  color: var(--contrast-color);
 }
 .dg-5{
   background: var(--blue-dg5);
+  color: var(--contrast-color);
 }
 .dg-6{
   background: var(--blue-dg6);
+  color: var(--contrast-color);
 }
 /* PHP Email Form Messages
 ------------------------------*/
@@ -1834,7 +1840,7 @@ section,
 }
 
 .faq .acc h3,ul{
-  color: var(--surface-color);
+  color: var(--contrast-color);
   padding-left: 0;
 }
 .faq .acc ul{
@@ -1943,7 +1949,10 @@ section,
 
 .faq .faq-item .faq-content .content-inner {
   overflow: hidden;
-  color: var(--blue);
+  color: var(--contrast-color);
+}
+.faq .faq-item .faq-content .content-inner ul li{
+    color: var(--contrast-color);
 }
 .faq .faq-item .faq-content .content-inner .text{
   margin: 20px 30px 20px 30px;
