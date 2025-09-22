@@ -263,8 +263,8 @@ h6 {
   transition: 0.3s;
   font-weight: 500;
   order: 2;
-  padding: 15px;
-  margin: 0 0 0 20px;
+  padding: 10px;
+  margin: 0 0 0 10px;
 }
 @media (min-width: 1200px) {
   .navmenu {
@@ -1324,7 +1324,7 @@ section,
 }
 .portfolio .header-content .nav{
   position: relative;
-  margin-bottom: -10px;
+  margin-bottom: -11px;
   max-width: 270px;
   min-width: 270px;
 }
