@@ -255,7 +255,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Navmenu - Desktop */
-.btn-sell{
+.header .drop1 .btn-sell{
   color: var(--contrast-color);
   background: var(--accent-color);
   font-size: 15px;
@@ -264,8 +264,15 @@ h6 {
   font-weight: 500;
   order: 2;
   padding: 10px;
-  margin: 0 0 0 10px;
+  margin: 20px 15px 0 15px;
+  font-weight: bold;
 }
+.navmenu li a{
+    font-weight: bold;
+  }
+.navmenu li ul li a{
+    font-weight: 500;
+  }
 @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
@@ -283,14 +290,12 @@ h6 {
   .navmenu li {
     position: relative;
   }
-
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
     padding: 18px 12px;
     font-size: 15px;
     font-family: var(--nav-font);
-    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -863,7 +868,7 @@ h6 {
  .leaf{
   background-image: url('../img/leaf.png'); /* la imagen que será la viñeta */
   background-repeat: no-repeat;
-  background-position: left top; /* posición de la imagen */
+  background-position: left center; /* posición de la imagen */
   background-size: 25px;    /* tamaño de la imagen */
   padding-left: 30px;
   line-height: 1.5; 
@@ -1745,9 +1750,12 @@ section,
   background-color: var(--blue);
   border-top: 15px solid var(--lightblue);
 }
-.faq .acc .col{
+.faq .acc .logo,.sub{
    border-top: 1px solid var(--contrast-color);
    border-bottom: 1px solid var(--contrast-color);  
+}
+.acc .logo img{
+  width: 50%;
 }
 .faq .acc .sub{
   padding: 35px 10px 10px 0;
@@ -1770,7 +1778,6 @@ section,
    border-top: 1px solid var(--contrast-color);
    border-bottom: 1px solid var(--contrast-color);
 }
-
 
 .faq .faq-item.faq-active .faq-header h4 {
   color: var(--contrast-color);
@@ -1874,13 +1881,14 @@ section,
   line-height: 1.8;
   font-size: 1rem;
   font-weight: 300;
+  height: 100%;
 }
 .faq .faq-item .faq-content .content-inner img {
   padding: 40px 40px 30px 40px;
 }
 .faq .faq-item .faq-content .content-inner .action-buttom{
   padding: 0 55px 0 0;
-  float: inline-end;
+  float: inline-start;
 }
 .faq .faq-item .faq-content .content-inner .text ul{
   list-style-type: none;
@@ -1921,6 +1929,9 @@ section,
   .faq .faq-item .faq-content .content-inner p {
     font-size: 0.95rem;
   }
+  .acc .logo img{
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1940,6 +1951,7 @@ section,
   .faq .faq-item .faq-content .content-inner p {
     font-size: 0.9rem;
   }
+  
 }
 /*--------------------------------------------------------------
 # Testimonials Section
