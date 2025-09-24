@@ -1620,7 +1620,7 @@ section,
 ---------------------------------------------------------------*/
 
 
-.sustainability  .container-fluid {
+.sustainability  .container{
     background: #C9D6DF;
     background: linear-gradient(171deg,rgba(201, 214, 223, 1) 0%, rgba(255, 255, 255, 1) 46%, rgba(255, 255, 255, 1) 100%);
     background-size: cover;
