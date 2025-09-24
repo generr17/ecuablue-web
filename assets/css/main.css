@@ -1339,7 +1339,7 @@ section,
    position: relative;
 }
 .portfolio .header-content{
-  padding: 14px 0 0 50px;
+  padding: 0 0 0 50px;
 }
 .portfolio .content .header-content h1 {
   font-weight: 600;
