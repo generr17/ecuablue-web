@@ -1236,18 +1236,13 @@ section,
 }
 .stats .container .row{
   width: 100%;
-  justify-content: center;
-  justify-items: center;
-  justify-self: center;
-  align-items: center;
-  align-content: center;
-  align-self: center;
+ 
 }
 .stats .stats-item {
   background-color: var(--surface-color);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   padding: 15px;
-  width: 250px;
+ 
 }
 .stats .stats-item span {
   color: var(--purple);
