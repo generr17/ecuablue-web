@@ -1137,7 +1137,6 @@ section,
   transition: 0.3s;
 }
 
-
 .home .content .btn-read-more:hover i {
   transform: translateX(5px);
 }
@@ -1234,6 +1233,15 @@ section,
 --------------------------------------------------------------*/
 .stats{
   padding: 20px 0 20px 0;
+}
+.stats .container .row{
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
 }
 .stats .stats-item {
   background-color: var(--surface-color);
@@ -1353,7 +1361,9 @@ section,
   font-weight: 400;
   padding:  0 0 0 40px;
   color: var(--blue);
-  
+}
+.portfolio .content .header-content .nav img{
+  width: 300px;
 }
 .portfolio .left img{
  height: 100%;
