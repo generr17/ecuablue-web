@@ -1166,7 +1166,8 @@ section,
   color: var(--green);
 }
 .home .section-2 .card .card-text{
-  text-align: justify;
+  text-align: center;
+  padding-top: 10px
 }
 /*--------------------------------------------------------------
 # Services Section
@@ -1444,7 +1445,7 @@ section,
 }
 
 .about .about-item p {
-  text-align: justify;
+  text-align: center;
   hyphens: auto;
 }
 
