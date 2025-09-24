@@ -1314,7 +1314,9 @@ section,
 .portfolio .icon-box {
   display: flex;
 }
-
+.portfolio .section-title h1{
+  font-weight: 700;
+}
 .portfolio .icon-box h4 {
   font-size: 20px;
   font-weight: 700;
