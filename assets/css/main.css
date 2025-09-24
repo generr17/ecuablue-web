@@ -1093,7 +1093,7 @@ section,
   color: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
 
-.hero .animated {
+.animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
@@ -1242,7 +1242,6 @@ section,
   background-color: var(--surface-color);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   padding: 15px;
- 
 }
 .stats .stats-item span {
   color: var(--purple);
@@ -1437,7 +1436,7 @@ section,
 
 .about .about-item .icon {
   font-size: 36px;
-  padding: 20px 20px;
+  padding: 10px 10px;
   border-radius: 4px;
   position: relative;
   margin-bottom: 25px;
@@ -1446,6 +1445,7 @@ section,
   transition: 0.3s;
   color: var(--blue);
   background: var(--blue-dg6);
+  width: 60px;
 }
 
 .about .about-item h5 {
@@ -1618,12 +1618,46 @@ section,
 /*--------------------------------------------------------------
   # Impacto azul
 ---------------------------------------------------------------*/
-.sustainability  .container-fluid{
-   padding: 0%;
-  
+
+
+.sustainability  .container-fluid {
+    background: #C9D6DF;
+    background: linear-gradient(171deg,rgba(201, 214, 223, 1) 0%, rgba(255, 255, 255, 1) 46%, rgba(255, 255, 255, 1) 100%);
+    background-size: cover;
  }
 
+.sustainability .icon-box {
+  display: flex;
+  margin-left: 10px;
+}
 
+.sustainability .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.sustainability .icon-box i {
+  font-size: 44px;
+  line-height: 44px;
+  color: var(--accent-color);
+  margin-right: 15px;
+}
+.sustainability .icon-box h1{
+  font-size: 44px;
+  line-height: 44px;
+  margin-right: 15px;
+  font-weight: 600;
+}
+
+.sustainability .icon-box p {
+  font-size: 15px;
+  color: color-mix(in srgb, var(--blue), transparent 30%);
+  margin-bottom: 0;
+  text-align: justify;
+  hyphens: auto;
+}
 
 
 /*--------------------------------------------------------------
@@ -1778,8 +1812,8 @@ section,
   padding-left: 0;
 }
 .faq .acc ul{
-  padding-right: 100px;
-   list-style-type: none;
+  padding-left: 14px;
+  list-style-type: none;
 }
 
 .faq .faq-item:last-child {
