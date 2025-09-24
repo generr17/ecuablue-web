@@ -200,21 +200,27 @@ h6 {
   font-weight: 700;
   color: var(--heading-color);
 }
-
-.header .btn-getstarted,
-.header .btn-getstarted:focus {
+.header .started{
+ margin-top: 15px;
+ list-style: none;
+}
+.header .drop1 ul{
+  list-style: none;
+}
+.header .btn-sell,
+.header .btn-sell:focus {
   color: var(--contrast-color);
   background: var(--accent-color);
   font-size: 15px;
-  padding: 8px 25px;
-  margin: 0 0 0 30px;
+  padding: 10px;
+  margin: 0 0 0 20px;
   border-radius: 4px;
   transition: 0.3s;
   font-weight: 500;
 }
 
-.header .btn-getstarted:hover,
-.header .btn-getstarted:focus:hover {
+.header .btn-sell:hover,
+.header .btn-sell:focus:hover {
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
@@ -224,7 +230,7 @@ h6 {
     order: 1;
   }
 
-  .header .btn-getstarted {
+  .header .btn-sell {
     order: 2;
     margin: 0 15px 0 0;
     padding: 6px 15px;
@@ -255,18 +261,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Navmenu - Desktop */
-.header .drop1 .btn-sell{
-  color: var(--contrast-color);
-  background: var(--accent-color);
-  font-size: 15px;
-  border-radius: 4px;
-  transition: 0.3s;
-  font-weight: 500;
-  order: 2;
-  padding: 10px;
-  margin: 20px 15px 0 15px;
-  font-weight: bold;
-}
+
 .navmenu li a{
     font-weight: bold;
   }
@@ -274,12 +269,12 @@ h6 {
     font-weight: 500;
   }
 @media (min-width: 1200px) {
-  .navmenu {
+  .navmenu{
     padding: 0;
     background-color: var(--background-color);
   }
 
-  .navmenu ul {
+  .navmenu ul{
     margin: 0;
     padding: 0;
     display: flex;
@@ -287,7 +282,7 @@ h6 {
     align-items: center;
   }
 
-  .navmenu li {
+  .navmenu li{
     position: relative;
   }
   .navmenu a,
@@ -707,6 +702,9 @@ h6 {
   position: relative;
   padding-bottom: 12px;
 }
+.footer .footer-top .footer-about img{
+   width: 150px;
+}
 
 .footer .footer-links {
   margin-bottom: 30px;
@@ -871,7 +869,7 @@ h6 {
   background-position: left center; /* posición de la imagen */
   background-size: 25px;    /* tamaño de la imagen */
   padding-left: 30px;
-  line-height: 1.5; 
+  line-height: 1.5;
 }
 /*--------------------------------------------------------------
 # Global Sections
@@ -1042,7 +1040,7 @@ section,
   color: var(--contrast-color);
   background: var(--accent-color);
   font-family: var(--heading-font);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
   display: flex;
