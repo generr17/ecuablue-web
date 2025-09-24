@@ -1622,10 +1622,8 @@ section,
 
 .sustainability {
     background: #C9D6DF;
-    background: linear-gradient(171deg,rgba(201, 214, 223, 1) 0%, rgba(255, 255, 255, 1) 46%, rgba(255, 255, 255, 1) 100%);
-    background-size: cover;
- }
-
+    background: linear-gradient(171deg,rgba(201, 214, 223, 1) 10%, rgba(245, 245, 245, 1) 23%, rgba(245, 245, 245, 1) 70%, rgba(201, 214, 223, 1) 81%);
+}
 .sustainability .icon-box {
   display: flex;
   margin-left: 10px;
