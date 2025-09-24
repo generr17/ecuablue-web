@@ -1128,12 +1128,15 @@ section,
    color: var(--green);               /* relleno */
   -webkit-text-stroke: 2px #000; /* borde */
 }
-
+.home .content {
+  height: 100%;
+}
 .home .content .btn-read-more i {
   margin-left: 10px;
   font-size: 18px;
   transition: 0.3s;
 }
+
 
 .home .content .btn-read-more:hover i {
   transform: translateX(5px);
