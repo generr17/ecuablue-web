@@ -1361,7 +1361,6 @@ section,
 }
 .portfolio .acction-buttom{
   padding-top: 55px;
-  float: inline-start;
   padding-left: 15px;
 }
 
@@ -1386,7 +1385,7 @@ section,
   transform: scale(1.1);
 }
 .portfolio-items{
-  padding: 0 45px 0 45px;
+  padding: 0 35px 0 35px;
   text-align: center;
   justify-content: center;
   justify-items: center;
@@ -1807,8 +1806,11 @@ section,
    border-top: 1px solid var(--contrast-color);
    border-bottom: 1px solid var(--contrast-color);  
 }
-.acc .logo img{
+.sb .logo img{
   width: 50%;
+}
+.eb .logo img{
+  width: 47%;
 }
 .faq .acc .sub{
   padding: 35px 10px 10px 0;
