@@ -1376,10 +1376,11 @@ section,
   overflow: hidden;
 }
 
-.portfolio .portfolio-content img {
+.portfolio .portfolio-content img, .portfolio .row img {
   transition: 0.3s;
   border: solid 1px #1a418a96;
 }
+
 
 .portfolio .portfolio-content:hover img {
   transform: scale(1.1);
