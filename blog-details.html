@@ -26,183 +26,6 @@
 
   <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
-  <style>
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-  .widgets-container {
-    background-color: var(--surface-color);
-    padding: 30px;
-    margin: 60px 0 30px 0;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  }
-
-  .widget-title {
-    color: var(--heading-color);
-    font-size: 20px;
-    font-weight: 700;
-    padding: 0;
-    margin: 0 0 20px 0;
-  }
-
-  .widget-item {
-    margin-bottom: 40px;
-  }
-
-  .widget-item:last-child {
-    margin-bottom: 0;
-  }
-
-  .search-widget form {
-    background: var(--background-color);
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
-    padding: 3px 10px;
-    position: relative;
-    transition: 0.3s;
-  }
-
-  .search-widget form input[type=text] {
-    border: 0;
-    padding: 4px;
-    border-radius: 4px;
-    width: calc(100% - 40px);
-    background-color: var(--background-color);
-    color: var(--default-color);
-  }
-
-  .search-widget form input[type=text]:focus {
-    outline: none;
-  }
-
-  .search-widget form button {
-    background: var(--accent-color);
-    color: var(--contrast-color);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    border: 0;
-    font-size: 16px;
-    padding: 0 15px;
-    margin: -1px;
-    transition: 0.3s;
-    border-radius: 0 4px 4px 0;
-    line-height: 0;
-  }
-
-  .search-widget form button i {
-    line-height: 0;
-  }
-
-  .search-widget form button:hover {
-    background: color-mix(in srgb, var(--accent-color), transparent 20%);
-  }
-
-  .search-widget form:is(:focus-within) {
-    border-color: var(--accent-color);
-  }
-
-  .categories-widget ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .categories-widget ul li {
-    padding-bottom: 10px;
-  }
-
-  .categories-widget ul li:last-child {
-    padding-bottom: 0;
-  }
-
-  .categories-widget ul a {
-    color: color-mix(in srgb, var(--default-color), transparent 20%);
-    transition: 0.3s;
-  }
-
-  .categories-widget ul a:hover {
-    color: var(--accent-color);
-  }
-
-  .categories-widget ul a span {
-    padding-left: 5px;
-    color: color-mix(in srgb, var(--default-color), transparent 50%);
-    font-size: 14px;
-  }
-
-  .recent-posts-widget .post-item {
-    display: flex;
-    margin-bottom: 15px;
-  }
-
-  .recent-posts-widget .post-item:last-child {
-    margin-bottom: 0;
-  }
-
-  .recent-posts-widget .post-item img {
-    width: 80px;
-    margin-right: 15px;
-  }
-
-  .recent-posts-widget .post-item h4 {
-    font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-
-  .recent-posts-widget .post-item h4 a {
-    color: var(--default-color);
-    transition: 0.3s;
-  }
-
-  .recent-posts-widget .post-item h4 a:hover {
-    color: var(--accent-color);
-  }
-
-  .recent-posts-widget .post-item time {
-    display: block;
-    font-style: italic;
-    font-size: 14px;
-    color: color-mix(in srgb, var(--default-color), transparent 50%);
-  }
-
-  .tags-widget {
-    margin-bottom: -10px;
-  }
-
-  .tags-widget ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .tags-widget ul li {
-    display: inline-block;
-  }
-
-  .tags-widget ul a {
-    color: color-mix(in srgb, var(--default-color), transparent 30%);
-    font-size: 14px;
-    padding: 6px 14px;
-    margin: 0 6px 8px 0;
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 60%);
-    display: inline-block;
-    transition: 0.3s;
-  }
-
-  .tags-widget ul a:hover {
-    background: var(--accent-color);
-    color: var(--contrast-color);
-    border: 1px solid var(--accent-color);
-  }
-
-  .tags-widget ul a span {
-    padding-left: 5px;
-    color: color-mix(in srgb, var(--default-color), transparent 60%);
-    font-size: 14px;
-  }
-  </style>
 
   <!-- =======================================================
   * Template Name: FlexStart
@@ -220,71 +43,52 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt="">
-        <h1 class="sitename">FlexStart</h1>
+        <img src="assets/img/LogoEcuaBlue.png" alt="">
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home<br></a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="#hero" class="active">Inicio<br></a></li>
+          <li class="dropdown"><a href="#services"><span>Productos</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li><a href="#home">Nuestra Fruta</a></li>
+              <li><a href="#portfolio">Nuestras Marcas</a></li>
+              <li><a href="#clients">Nuestros Clientes</a></li>
+            </ul>
+          </li>
+          <li><a href="#sustainability" >Sostenibilidad<br></a></li>
+          <li class="dropdown"><a href="#"><span>Inspiración</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Activaciones</a></li>
+              <li><a href="#">Recetas</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#about"><span>Sobre Nosotros</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#about">Nuestro Propósito</a></li>
+              <li><a href="#history">Nuestra Historia</a></li>
+              <li class="dropdown"><a href="#group"><span>Nuestro Grupo</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
+                  <li><a href="#ecuablue">EcuaBlue</a></li>
+                  <li><a href="#sierrablue">SierraBlue</a></li>
                 </ul>
               </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
-          <li class="listing-dropdown"><a href="#"><span>Listing Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li>
-                <a href="#">Column 1 link 1</a>
-                <a href="#">Column 1 link 2</a>
-                <a href="#">Column 1 link 3</a>
-              </li>
-              <li>
-                <a href="#">Column 2 link 1</a>
-                <a href="#">Column 2 link 2</a>
-                <a href="#">Column 3 link 3</a>
-              </li>
-              <li>
-                <a href="#">Column 3 link 1</a>
-                <a href="#">Column 3 link 2</a>
-                <a href="#">Column 3 link 3</a>
-              </li>
-              <li>
-                <a href="#">Column 4 link 1</a>
-                <a href="#">Column 4 link 2</a>
-                <a href="#">Column 4 link 3</a>
-              </li>
-              <li>
-                <a href="#">Column 5 link 1</a>
-                <a href="#">Column 5 link 2</a>
-                <a href="#">Column 5 link 3</a>
-              </li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Contáctanos</a></li>
+          
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <a class="btn-getstarted flex-md-shrink-0" href="index.html#about">Get Started</a>
-
+     <ul class="started">
+      <li class="dropdown drop1"><a href="#" class="btn-sell"><span>Compra Aquí</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+      <ul >
+              <li><a href="https://wa.link/lewjlr" target="_blank">Arándanos</a></li>
+              <li><a href="https://wa.link/gj0ojl" target="_blank">Plantas</a></li>
+              <li><a href="https://wa.link/6snqfd" target="_blank">Sustrato</a></li>
+              <li><a href="https://wa.link/ecf8rv" target="_blank">Insumos</a></li>
+       </ul>
+     </ul>
     </div>
   </header>
 
@@ -664,66 +468,46 @@
   </main>
 
   <footer id="footer" class="footer">
-
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-            <form action="forms/newsletter.php" method="post" class="php-email-form">
-              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">FlexStart</span>
+           <a href="index.html" class="logo d-flex align-items-center me-auto">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img src="assets/img/LogoEcuaBlue.png" alt="" class="img-fluid">
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>Calle Leo Maldonado S/N y Eduardo Crespo</p>
+            <p>Sector Otón de Vélez. Yaruquí, Ecuador</p>
+            <p class="mt-3"><strong>Teléfono:</strong> <span>+593 99 143 8519 </span></p>
+            <p><strong>Email:</strong> <span>info@ecuablue.farm</span></p>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#hero">Inicio</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#portfolio">Productos</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#sustainability">Sostenibilidad</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#recent-posts">Inspiración</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4>Sobre Nosotros</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#about">Nuestro Propósito</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#history">Nuestra Historia</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#group">Nuestro Grupo</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12">
-          <h4>Follow Us</h4>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+          <h4>Nuestras redes sociales</h4>
           <div class="social-links d-flex">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/Ecuablueec" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/arandanos.berrybest/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.tiktok.com/@arandanos.berrybest.ec?_t=ZM-8zyMdUFlHUC&_r=1" target="_blank"><i class="bi bi-tiktok"></i></a>
+            <a href="https://www.linkedin.com/company/ecuablue/" target="_blank"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
