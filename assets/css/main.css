@@ -1512,6 +1512,12 @@ section,
 .certificate .certificate-item.item-green {
   border-bottom: 3px solid var(--green);
 }
+/* Responsivo */
+    @media (max-width: 1024px) {
+      .certificate .certificate-item img{
+        width: 75%;
+      }
+    }
 /*--------------------------------------------------------------
   # History Section
 ---------------------------------------------------------------*/
@@ -1954,10 +1960,7 @@ section,
 }
 
 @media (max-width: 768px) {
-  .faq .faq-item .faq-header {
-    padding: 30px 0;
-  }
-
+  
   .faq .faq-item .faq-header h4 {
     font-size: 1.1rem;
     margin-right: 15px;
@@ -1982,9 +1985,7 @@ section,
 }
 
 @media (max-width: 576px) {
-  .faq .faq-item .faq-header {
-    padding: 25px 0;
-  }
+  
 
   .faq .faq-item .faq-header h4 {
     font-size: 1rem;
