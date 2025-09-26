@@ -1922,7 +1922,7 @@ section,
   line-height: 1.8;
   font-size: 1rem;
   font-weight: 300;
-  height: 100%;
+  height: auto;
 }
 .faq .faq-item .faq-content .content-inner img {
   padding: 40px 40px 30px 40px;
@@ -1959,10 +1959,7 @@ section,
     height: 20px;
     font-size: 16px;
   }
-
-  .faq .faq-item .faq-content .content-inner {
-    padding: 0 60px 0 60px;
-  }
+   
 
   .faq .faq-item .faq-content .content-inner p {
     font-size: 0.95rem;
@@ -1970,20 +1967,23 @@ section,
   .acc .logo img{
     width: 100%;
   }
+  .faq .faq-item .faq-content .content-inner img{
+    padding-top: 0;
+    margin-top: 0;
+  }
+
 }
 
 @media (max-width: 576px) {
   
-
   .faq .faq-item .faq-header h4 {
     font-size: 1rem;
     margin-right: 10px;
   }
-
-  .faq .faq-item .faq-content .content-inner {
-    padding: 0 50px 0 50px;
+  .faq .faq-item .faq-content .content-inner img{
+    padding-top: 0;
+    margin-top: 0;
   }
-
   .faq .faq-item .faq-content .content-inner p {
     font-size: 0.9rem;
   }
