@@ -1820,6 +1820,10 @@ section,
   padding-left: 14px;
   list-style-type: none;
 }
+.faq .faq-item .faq-content .content-inner .text .list-products ul{
+  margin-left: 50px;
+   list-style-type:disc;
+}
 
 .faq .faq-item:last-child {
   border-bottom: none;
@@ -1856,6 +1860,7 @@ section,
   visibility: visible;
   opacity: 1;
 }
+
 
 .faq .faq-item:not(.faq-active) .faq-header .faq-toggle i.bi-plus {
   opacity: 1;
