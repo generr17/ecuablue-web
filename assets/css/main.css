@@ -2447,6 +2447,10 @@ section,
   color: var(--blue);
 }
 
+.blog-details .content ul{
+  margin-left: 20px;
+}
+
 .blog-details .content blockquote {
   overflow: hidden;
   background-color: color-mix(in srgb, var(--default-color), transparent 95%);
