@@ -1,30 +1,17 @@
-/**
-* Template Name: FlexStart
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Updated: Nov 01 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: 'Montserrat', sans-serif;
   --heading-font: 'Montserrat', sans-serif;
   --nav-font:'Montserrat', sans-serif;
 }
-
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #012970; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #722282; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #ffffff; 
+  --default-color: #444444; 
+  --heading-color: #012970;
+  --accent-color: #722282; 
+  --surface-color: #ffffff; 
+  --contrast-color: #ffffff; 
   --purple : #722282;
   --green: #3dae2b;
   --blue: #1a428a;
@@ -39,17 +26,17 @@
   --blue-dg6: rgba(26, 66, 138, 0.4);
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+
 :root {
-  --nav-color: #012970;  /* The default color of the main navmenu links */
-  --nav-hover-color: #4154f1; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #4154f1; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #012970;  
+  --nav-hover-color: #4154f1; 
+  --nav-mobile-background-color: #ffffff; 
+  --nav-dropdown-background-color: #ffffff; 
+  --nav-dropdown-color: #212529; 
+  --nav-dropdown-hover-color: #4154f1; 
 }
 
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+
 
 .light-background {
   --background-color: #f9f9f9;
@@ -865,10 +852,10 @@ h6 {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
  .leaf{
-  background-image: url('../img/leaf.png'); /* la imagen que será la viñeta */
+  background-image: url('../img/leaf.png'); 
   background-repeat: no-repeat;
-  background-position: left center; /* posición de la imagen */
-  background-size: 25px;    /* tamaño de la imagen */
+  background-position: left center; 
+  background-size: 25px;   
   padding-left: 30px;
   line-height: 1.5;
 }
@@ -1123,8 +1110,8 @@ section,
 --------------------------------------------------------------*/
 
 .bi-leaf-fill{
-   color: var(--green);               /* relleno */
-  -webkit-text-stroke: 2px #000; /* borde */
+   color: var(--green);               
+  -webkit-text-stroke: 2px #000; 
 }
 .home .content {
   height: 100%;
@@ -1519,11 +1506,11 @@ section,
   .history{
     padding: 0 10px 0 10px;
   }
-  /* Contenedor externo centrado */
+
     .swiper-container-outer {
       position: relative;
       margin: 50px auto;
-      padding: 0 60px; /* espacio para los botones */
+      padding: 0 60px; 
     }
 
     .swiper {
@@ -1539,7 +1526,7 @@ section,
       justify-content: center;
     }
 
-    /* Tarjeta */
+   
     .card-swiper{
       text-align: center;
       width: 100%;
@@ -1574,7 +1561,6 @@ section,
       margin: 0;
     }
 
-    /* Botones */
     .swiper-button-next,
     .swiper-button-prev {
       color: var(--purple);
@@ -1592,10 +1578,9 @@ section,
       right: 10px;
     }
 
-    /* Responsivo */
     @media (max-width: 1024px) {
       .swiper-container-outer {
-        max-width: 700px; /* ancho para 2 tarjetas */
+        max-width: 700px; 
         padding: 0 50px;
       }
       .card-swiper {
@@ -1605,7 +1590,7 @@ section,
 
     @media (max-width: 768px) {
       .swiper-container-outer {
-        max-width: 340px; /* ancho para 1 tarjeta */
+        max-width: 340px; 
         padding: 0 40px;
       }
       .card-swiper {
@@ -2277,10 +2262,6 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-/* .starter-section {
-  Add your styles here 
-}*/
-
 
 /*--------------------------------------------------------------
 # Blog Posts Section
@@ -2510,10 +2491,6 @@ section,
   display: inline-block;
   line-height: 1;
 }
-/*--------------------------------------------------------------
-# Blog Author Section
---------------------------------------------------------------*/
-
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
