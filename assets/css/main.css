@@ -870,7 +870,6 @@ section,
   scroll-margin-top: 98px;
   overflow: clip;
 }
-
 @media (max-width: 1199px) {
 
   section,
@@ -888,6 +887,7 @@ section,
   text-decoration-thickness: 2px; 
   text-underline-offset: 4px;
 }
+
 .section-title {
   text-align: center;
   position: relative;
@@ -1212,9 +1212,6 @@ section,
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
-.stats{
-  padding: 20px 0 20px 0;
-}
 .stats .container .row{
   width: 100%;
  
@@ -1223,6 +1220,7 @@ section,
   background-color: var(--surface-color);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   padding: 15px;
+  height: 100%;
 }
 .stats .stats-item span {
   color: var(--purple);
@@ -1503,10 +1501,6 @@ section,
 /*--------------------------------------------------------------
   # History Section
 ---------------------------------------------------------------*/
-  .history{
-    padding: 0 10px 0 10px;
-  }
-
     .swiper-container-outer {
       position: relative;
       margin: 50px auto;
@@ -1764,9 +1758,7 @@ section,
 /*--------------------------------------------------------------
 # Faq Section
 --------------------------------------------------------------*/
-.faq {
-  padding: 10px 0 20px 0;
-}
+
 .faq .faq-item {
   margin-bottom: 0;
   width: 100%;
