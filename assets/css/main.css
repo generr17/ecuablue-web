@@ -1804,6 +1804,9 @@ section,
   margin-left: 50px;
    list-style-type:disc;
 }
+.list-products p{
+  margin-left: 30px;
+}
 
 .faq .faq-item:last-child {
   border-bottom: none;
