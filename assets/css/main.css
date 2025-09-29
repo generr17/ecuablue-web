@@ -1069,7 +1069,9 @@ section,
   line-height: 0;
   margin-right: 8px;
 }
-
+.hero .btn-watch-video span em {
+  font-weight: lighter;
+}
 .hero .btn-watch-video:hover {
   color: var(--accent-color);
 }
@@ -1077,7 +1079,6 @@ section,
 .hero .btn-watch-video:hover i {
   color: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
-
 .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
