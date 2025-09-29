@@ -1466,6 +1466,9 @@ section,
 /*--------------------------------------------------------------
 # Certificate Section
 --------------------------------------------------------------*/
+.certificate{
+   background-color: color-mix(in srgb, var(--accent-color), transparent 97%);
+}
 .certificate .certificate-item {
   background-color: var(--surface-color);
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
