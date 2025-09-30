@@ -1,11 +1,4 @@
 <?php
-/**
- * PHP Email Form
- * Version: 2.1
- * Website: https://bootstrapmade.com/php-email-form/
- * Copyright: BootstrapMade.com
- */
-
 if ( version_compare(PHP_VERSION, '5.5.0', '<') ) {
   die('PHP version 5.5.0 and up is required. Your PHP version is ' . PHP_VERSION);
 }
@@ -218,7 +211,7 @@ class PHP_Email_Form {
  * @copyright 2012 - 2019 Marcus Bointon
  * @copyright 2010 - 2012 Jim Jagielski
  * @copyright 2004 - 2009 Andy Prevost
- * @license   http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @license   http://www.gnu.org/copyleft/lesser.php GNU Lesser General Public License
  * @note      This program is distributed in the hope that it will be useful - WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
  * FITNESS FOR A PARTICULAR PURPOSE.
@@ -654,7 +647,7 @@ class PHPMailer
      * Only applicable when sending via SMTP.
      *
      * @see https://en.wikipedia.org/wiki/Variable_envelope_return_path
-     * @see http://www.postfix.org/VERP_README.html Postfix VERP info
+     * @see http://www.postfix.org/VERP_README.php Postfix VERP info
      *
      * @var bool
      */
@@ -1971,9 +1964,9 @@ class PHPMailer
         //This sets the SMTP envelope sender which gets turned into a return-path header by the receiver
         //A space after `-f` is optional, but there is a long history of its presence
         //causing problems, so we don't use one
-        //Exim docs: http://www.exim.org/exim-html-current/doc/html/spec_html/ch-the_exim_command_line.html
-        //Sendmail docs: http://www.sendmail.org/~ca/email/man/sendmail.html
-        //Qmail docs: http://www.qmail.org/man/man8/qmail-inject.html
+        //Exim docs: http://www.exim.org/exim-html-current/doc/html/spec_html/ch-the_exim_command_line.php
+        //Sendmail docs: http://www.sendmail.org/~ca/email/man/sendmail.php
+        //Qmail docs: http://www.qmail.org/man/man8/qmail-inject.php
         //Example problem: https://www.drupal.org/node/1057954
         // CVE-2016-10033, CVE-2016-10045: Don't pass -f if characters will be escaped.
         if (!empty($this->Sender) && static::validateAddress($this->Sender) && self::isShellSafe($this->Sender)) {
@@ -5044,7 +5037,7 @@ class PHPMailer
  * @copyright 2012 - 2019 Marcus Bointon
  * @copyright 2010 - 2012 Jim Jagielski
  * @copyright 2004 - 2009 Andy Prevost
- * @license   http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @license   http://www.gnu.org/copyleft/lesser.php GNU Lesser General Public License
  * @note      This program is distributed in the hope that it will be useful - WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
  * FITNESS FOR A PARTICULAR PURPOSE.
@@ -5168,7 +5161,7 @@ class SMTP
      * Whether to use VERP.
      *
      * @see http://en.wikipedia.org/wiki/Variable_envelope_return_path
-     * @see http://www.postfix.org/VERP_README.html Info on VERP
+     * @see http://www.postfix.org/VERP_README.php Info on VERP
      *
      * @var bool
      */

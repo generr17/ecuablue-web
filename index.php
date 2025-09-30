@@ -31,7 +31,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <a href="index.php" class="logo d-flex align-items-center me-auto">
         <img src="assets/img/LogoEcuaBlue.webp" alt="">
       </a>
 
@@ -1273,7 +1273,7 @@
               <div class="post-content d-flex flex-column">
                 <h3 class="post-title">¡La Gran Aventura Azul ya está en cines!</h3>
                 <hr>
-                <a href="aventura-azul.html" class="readmore stretched-link"><span>Leer más</span><i class="bi bi-arrow-right"></i></a>
+                <a href="aventura-azul.php" class="readmore stretched-link"><span>Leer más</span><i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -1285,7 +1285,7 @@
               <div class="post-content d-flex flex-column">
                 <h3 class="post-title">Berrybest y Los Pitufos™</h3>
                 <hr>
-                <a href="berrybes&pitufos.html" class="readmore stretched-link"><span>Leer más</span><i class="bi bi-arrow-right"></i></a>
+                <a href="berrybes&pitufos.php" class="readmore stretched-link"><span>Leer más</span><i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -1297,7 +1297,7 @@
               <div class="post-content d-flex flex-column">
                 <h3 class="post-title">Campamento de verano</h3>
                 <hr>
-                <a href="campamento-verano.html" class="readmore stretched-link"><span>Leer más</span><i class="bi bi-arrow-right"></i></a>
+                <a href="campamento-verano.php" class="readmore stretched-link"><span>Leer más</span><i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -1389,7 +1389,7 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
-           <a href="index.html" class="logo d-flex align-items-center me-auto">
+           <a href="index.php" class="logo d-flex align-items-center me-auto">
             <img src="assets/img/LogoEcuaBlue.webp" alt="" class="img-fluid">
           </a>
           <div class="footer-contact pt-3">

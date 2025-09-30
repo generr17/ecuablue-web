@@ -26,14 +26,6 @@
 
   <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: FlexStart
-  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-  * Updated: Nov 01 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="blog-details-page">
@@ -41,40 +33,38 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
+      <a href="index.php" class="logo d-flex align-items-center me-auto">
         <img src="assets/img/LogoEcuaBlue.webp" alt="">
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Inicio<br></a></li>
-          <li class="dropdown"><a href="index.html#services"><span>Productos</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="index.php" class="active">Inicio<br></a></li>
+          <li class="dropdown"><a href="index.php#services"><span>Productos</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="index.html#home">Nuestra Fruta</a></li>
-              <li><a href="index.html#portfolio">Nuestras Marcas</a></li>
-              <li><a href="index.html#clients">Nuestros Clientes</a></li>
+              <li><a href="index.php#home">Nuestra Fruta</a></li>
+              <li><a href="index.php#portfolio">Nuestras Marcas</a></li>
+              <li><a href="index.php#clients">Nuestros Clientes</a></li>
             </ul>
           </li>
-          <li><a href="index.html#sustainability" >Sostenibilidad<br></a></li>
-            <li class="dropdown"><a href="index.html#about"><span>Sobre Nosotros</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="index.php#sustainability" >Sostenibilidad<br></a></li>
+            <li class="dropdown"><a href="index.php#about"><span>Sobre Nosotros</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="index.html#about">Nuestro Propósito</a></li>
-              <li><a href="index.html#history">Nuestra Historia</a></li>
-              <li class="dropdown"><a href="index.html#group"><span>Nuestro Grupo</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li><a href="index.php#about">Nuestro Propósito</a></li>
+              <li><a href="index.php#history">Nuestra Historia</a></li>
+              <li class="dropdown"><a href="index.php#group"><span>Nuestro Grupo</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="index.html#ecuablue">EcuaBlue</a></li>
-                  <li><a href="index.html#sierrablue">SierraBlue</a></li>
+                  <li><a href="index.php#ecuablue">EcuaBlue</a></li>
+                  <li><a href="index.php#sierrablue">SierraBlue</a></li>
                 </ul>
               </li>
             </ul>
           </li>
-          <li class="dropdown"><a href="index.html#posts"><span>Inspiración</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="index.php#posts"><span>Inspiración</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="index.html#posts">Activaciones</a></li>
+              <li><a href="index.php#posts">Activaciones</a></li>
             </ul>
           </li>
-          <li><a href="index.html#contact">Contáctanos</a></li>
+          <li><a href="index.php#contact">Contáctanos</a></li>
           
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -98,8 +88,8 @@
       <nav class="breadcrumbs">
         <div class="container blue" >
           <ol>
-            <li><a href="index.html">Inicio</a></li>
-            <li class="current">¡La Gran Aventura Azul ya está en cines!</li>
+            <li><a href="index.php">Inicio</a></li>
+            <li class="current">Campamento de verano</li>
           </ol>
         </div>
       </nav>
@@ -116,39 +106,31 @@
 
               <article class="article">
 
-                <h2 class="title">¡La Gran Aventura Azul ya está en cines!</h2>
+                <h2 class="title">Un verano diferente en EcuaBlue</h2>
 
                 <div class="post-img">
-                  <img src="assets/img/blog/Arándanos y Pitufos Combo Cine.webp" alt="" class="img-fluid">
+                  <img src="assets/img/blog/Campamento Vacacional.webp" alt="" class="img-fluid">
                 </div>
-
-
                 <div class="meta-top">
                   <ul>
-                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="index.html#recent-posts"><time datetime="2025-07-17">Julio 17, 2025</time></a></li>
+                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="index.php#recent-posts"><time datetime=""></time></a></li>
                   </ul>
                 </div><!-- End meta top -->
-
                 <div class="content">
                   <p>
-                    Hoy se estrena una experiencia única que combina diversión, sabor y salud.
-                    La nueva película de <strong>Los Pitufos™  </strong>llega con muchas sorpresas… ¡y nuestros Pitufiarándanos son parte de la historia!
+                    Cada año abrimos las puertas de nuestra finca para vivir una experiencia única: nuestro campamento de verano. Una semana pensada especialmente para los hijos de nuestros colaboradores, donde la diversión se mezcla con el aprendizaje y la magia de compartir en familia.
                   </p>
-                  <p>
-                   En alianza con Multicines S.A., llevamos esta propuesta innovadora a las salas de cine de Quito, ofreciendo una alternativa deliciosa y saludable para toda la familia.
-                  </p>
-                  <p>¡Una apuesta por ecuatorianos más fuerte, más sanos y llenos de energía!  </p>
-                  <p>
-                    Gracias a Melissa Villalba por brindarnos la oportunidad de trabajar de la mano con Paramount Ecuador, ¡que sea el primero de muchos proyectos exitosos en conjunto!
-                  </p>
-                   <blockquote>
+                  <p>El objetivo es que los niños conozcan de cerca el trabajo de sus padres y se sientan parte de este gran proyecto. Durante la semana se convierten en pequeños agricultores: siembran, cosechan, lavan gavetas, etiquetan y hasta arman pedidos básicos. Todo en un ambiente seguro, alegre y lleno de curiosidad.</p>
+                  <p>Pero no todo es trabajo: también disfrutan de juegos, actividades lúdicas y mucho tiempo para hacer nuevos amigos, creando recuerdos que atesorarán toda la vida.</p>
+                  <p>Para nuestros colaboradores, este campamento significa más que una semana de actividades: es la oportunidad de compartir momentos inolvidables con sus hijos, de mostrarles con orgullo lo que hacen cada día y de fortalecer la unión familiar.</p>
+                  <p>Con cada edición reforzamos nuestra convicción de que este campamento no solo es una tradición, sino un espacio donde se forjan amistades duraderas y se cultiva el orgullo de pertenecer a una hermosa empresa que sigue sembrando el progreso en Ecuador.</p>
+                <blockquote>
                     <div class="row gx-2 gy-2">
-                        <div class="col-lg-4"> <img src="assets/img/blog/Arandanos Cines1.webp" class="img-fluid" alt=""></div>
-                        <div class="col-lg-4"> <img src="assets/img/blog/Arandanos Cines2.webp" class="img-fluid" alt=""></div>
-                        <div class="col-lg-4"> <img src="assets/img/blog/Arandanos Cines3.webp" class="img-fluid" alt=""></div>
+                        <div class="col-lg-4"> <img src="assets/img/blog/Campamento de Verano1.webp" class="img-fluid" alt=""></div>
+                        <div class="col-lg-4"> <img src="assets/img/blog/Campamento de Verano2.webp" class="img-fluid" alt=""></div>
+                        <div class="col-lg-4"> <img src="assets/img/blog/Campamento de Verano3.webp" class="img-fluid" alt=""></div>
                     </div>
-                 </blockquote>
-
+                  </blockquote>
                 </div><!-- End post content -->
               </article>
 
@@ -169,7 +151,7 @@
               <div class="post-item">
                 <img src="assets/img/blog/Arándanos en Supermaxi.webp" alt="" class="flex-shrink-0">
                 <div>
-                  <h4><a href="berrybes&pitufos.html">Berrybest y Los Pitufos™</a></h4>
+                  <h4><a href="berrybes&pitufos.php">Berrybest y Los Pitufos™</a></h4>
                   <time datetime="2025-08-15">Agosto 15, 2025</time>
                 </div>
               </div><!-- End recent post item-->
@@ -177,14 +159,14 @@
               <div class="post-item">
                 <img src="assets/img/blog/Arándanos y Pitufos Combo Cine.webp" alt="" class="flex-shrink-0">
                 <div>
-                  <h4><a href="berrybes&pitufos.html">¡La Gran Aventura Azul ya está en cines!</a></h4>
+                  <h4><a href="berrybes&pitufos.php">¡La Gran Aventura Azul ya está en cines!</a></h4>
                   <time datetime="2025-07-17">Julio 17, 2025</time>
                 </div>
               </div><!-- End recent post item-->
               <div class="post-item">
                 <img src="assets/img/blog/Campamento Vacacional.webp" alt="" class="flex-shrink-0">
                 <div>
-                  <h4><a href="campamento-verano.html">Campamento de verano</a></h4>
+                  <h4><a href="campamento-verano.php">Campamento de verano</a></h4>
                   <time datetime=""></time>
                 </div>
               </div><!-- End recent post item-->
@@ -204,7 +186,7 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
-           <a href="index.html" class="logo d-flex align-items-center me-auto">
+           <a href="index.php" class="logo d-flex align-items-center me-auto">
             <!-- Uncomment the line below if you also wish to use an image logo -->
             <img src="assets/img/LogoEcuaBlue.webp" alt="" class="img-fluid">
           </a>
